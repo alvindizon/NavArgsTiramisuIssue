@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/first_dest">
+
+    <fragment
+        android:id="@+id/first_dest"
+        android:name="com.alvindizon.navargstiramisuissue.FirstFragment"
+        android:label="fragment_first"  >
+
+        <action
+            android:id="@+id/navigateToSecondScreen"
+            app:destination="@id/second_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_dest"
+        android:name="com.alvindizon.navargstiramisuissue.SecondFragment"
+        android:label="fragment_second"  >
+
+        <argument
+            android:name="someArg"
+            app:argType="string" />
+
+        <argument
+            android:name="someSerializable"
+            app:argType="com.alvindizon.navargstiramisuissue.SerializableParams" />
+    </fragment>
+
+</navigation>

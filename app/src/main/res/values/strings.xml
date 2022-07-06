@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NavArgsTiramisuIssue</string>
+    <string name="first_screen">First screen - tap to go to second screen</string>
+    <string name="second_screen">Second screen</string>
+</resources>
